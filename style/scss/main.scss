@@ -1,0 +1,98 @@
+//sass --watch style/scss:style/css
+
+@import 'colors';
+@import 'typo';
+
+body {
+    background-color: $primary-color;
+    font-size: $font-size-body;
+    font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+}
+
+h1 {
+    font-size: $font-size-page-heading;
+}
+
+h2 {
+    font-size: $font-size-page-sub-heading;
+}
+
+h5 {
+    color: $sub-heading-color;
+    font-size: $font-size-page-sub-heading;
+}
+
+.lead, p {
+    font-size: $font-size-body;
+    font-family: $font-body;
+    color: $body-text-color;
+}
+
+.btn-primary {
+    background: $brand-color;
+    border: $brand-color;
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+}
+
+.news {
+    .news__newsheading {
+        font-family: $font-body;
+    }
+}
+
+.card img{
+    border-radius: 0 0 0.25em 0;
+}
+
+.navbar-light {
+    .btn, .form-control {
+        border-radius: 0;
+    }
+    .navbar-brand {
+        color: $brand-color;
+        font-family: $font-heading;
+        font-size: $font-size-logo;
+        font-style: italic;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $nav-text-color;
+            font-size: $font-size-menu;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+
+        .active>.nav-link {
+            color: $nav-text-color;
+            background-color: #ffffff;
+        }  
+    } 
+}
+
+.footer {
+    background-color: $footer-background;
+    font-size: $font-size-footer;
+    img {
+        opacity: 0.25;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.nav-tabs {
+    .nav-link {
+        color: $nav-text-color;
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
