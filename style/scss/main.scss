@@ -3,10 +3,19 @@
 @import 'colors';
 @import 'typo';
 
+@font-face {
+    font-family: 'playfair disply';
+    src: url(../../font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+  }
+
 body {
     background-color: $primary-color;
     font-size: $font-size-body;
     font-family: $font-body;
+}
+
+a {
+    color: $brand-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: $font-size-page-heading;
+    color: $brand-color;
 }
 
 h2 {
@@ -40,7 +50,20 @@ h5 {
     }
 }
 
+.news__newsbtn {
+    width: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
 .news {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: rgba($color: #000000, $alpha: 0.05) 0 6px 10px;
+
     .news__newsheading {
         font-family: $font-body;
     }
@@ -54,9 +77,10 @@ h5 {
     .btn, .form-control {
         border-radius: 0;
     }
+
     .navbar-brand {
         color: $brand-color;
-        font-family: $font-heading;
+        font-family: $font-logo;
         font-size: $font-size-logo;
         font-style: italic;
     }
@@ -70,29 +94,63 @@ h5 {
             }
         }
 
-        .active>.nav-link {
+        .active.nav-link {
             color: $nav-text-color;
             background-color: #ffffff;
-        }  
-    } 
+        }
+    }
+}
+
+.form-group {
+    .form-control {
+        height: 56px;
+    }
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 0px 16px 16px 16px;
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     background-color: $footer-background;
     font-size: $font-size-footer;
+    
     img {
         opacity: 0.25;
         &:hover {
             opacity: 1;
         }
     }
+    .email-footer {
+        text-align: center;
+    }
 }
 
 .nav-tabs {
     .nav-link {
-        color: $nav-text-color;
+        border-radius: 16px 16px 0 0;
+        border: none;
+        color: $brand-color;
+        z-index: 0;
         &:hover {
-            color: $brand-color;
+            color: $nav-text-color;
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+    .img-fluid {
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .w-md-auto {
+        width: auto !important;
+    }
+
 }

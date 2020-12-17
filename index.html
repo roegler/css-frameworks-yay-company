@@ -16,10 +16,10 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">The YAY Company</a>
+    <nav class="navbar px-0 px-md-4 navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand ml-4 ml-md-0" href="index.html">The YAY Company</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,25 +27,25 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link shadow-sm bg-white" href="index.html">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-link bg-white px-4 py-3" href="index.html">HOME<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news.html">NEWS</a>
+            <a class="nav-link px-4 py-3" href="news.html">NEWS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link px-4 py-3" href="contact.html">CONTACT</a>
           </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
+        <form class="d-inline-flex w-100 w-md-auto px-4 px-md-0 py-4 py-md-0">
           <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
-          <button class="btn btn-primary my-2 my-sm-0" type="submit">GO</button>
+          <button class="btn btn-primary my-sm-0" type="submit">GO</button>
         </form>
       </div>
     </nav>
   </header>
 
   <!--carousel-->
-  <div class="d-none d-md-block">
+  <div class="d-md-block">
     <div id="carousel-fade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -70,7 +70,7 @@
   </div>
 
   <div class="container py-5">
-    <div class="d-none d-md-block">
+    <div class="d-md-block">
       <h1>We do YAY things</h1>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore
@@ -82,7 +82,7 @@
     </div>
 
     <!--tab nav-->
-    <div class="d-none d-md-block">
+    <div class="d-md-block">
       <ul class="nav nav-tabs mt-5">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#home">Lorem ipsum dolor</a>
@@ -96,15 +96,15 @@
       </ul>
     </div>
 
-    <div class="tab-content p-3">
+    <div class="tab-content p-3 container">
       <div id="home" class="tab-pane active bd-highlight mb-3">
         <div class="container">
-          <div class="row">
-            <div class="col-4 d-none d-md-block">
+          <div class="d-flex flex-wrap flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-4 d-md-block">
               <img src="images/tabs/tab-1.jpg" class="img-fluid" alt="standing old TV">
             </div>
-            <div class="col-md-8">
-              <h3>Lorem ipsum dolor sit amet</h3>
+            <div class="col-12 col-md-8">
+              <h3 class="d-sm-none d-md-block">Lorem ipsum dolor sit amet</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -112,6 +112,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div class="link-some-icons d-flex justify-content-space-between">
+                <a class="mr-3" href="#">SHARE</a>
+                <div class="some-icons">
+                  <img src="../yay-company/images/icons/facebook-f.png" alt="facebook icon" class="mr-3">
+                  <img src="../yay-company/images/icons/twitter.png" alt="twitter icon">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -119,12 +126,12 @@
 
       <div id="menu1" class="tab-pane bd-highlight mb-3">
         <div class="container">
-          <div class="row">
-            <div class="col-4 d-none d-md-block">
+          <div class="d-flex flex-wrap flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-4 d-md-block">
               <img src="images/tabs/tab-2.jpg" class="img-fluid" alt="picture wall">
             </div>
-            <div class="col-md-8">
-              <h3>Consectetur adipiscing elit</h3>
+            <div class="col-12 col-md-8">
+              <h3 class="d-sm-none d-md-block">Consectetur adipiscing elit</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -132,6 +139,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div class="link-some-icons d-flex justify-content-space-between">
+                <a class="mr-3" href="#">SHARE</a>
+                <div class="some-icons">
+                  <img src="../yay-company/images/icons/facebook-f.png" alt="facebook icon" class="mr-3">
+                  <img src="../yay-company/images/icons/twitter.png" alt="twitter icon">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -139,12 +153,12 @@
 
       <div id="menu2" class="tab-pane bd-highlight mb-3">
         <div class="container">
-          <div class="row">
-            <div class="col-4 d-none d-md-block">
+          <div class="d-flex flex-wrap flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-4 d-md-block">
               <img src="images/tabs/tab-3.jpg" class="img-fluid" alt="broken window">
             </div>
-            <div class="col-md-8">
-              <h3>Sed do eiusmod tempor</h3>
+            <div class="col-12 col-md-8">
+              <h3 class="d-sm-none d-md-block">Sed do eiusmod tempor</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -152,6 +166,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div class="link-some-icons d-flex justify-content-space-between">
+                <a class="mr-3" href="#">SHARE</a>
+                <div class="some-icons">
+                  <img src="../yay-company/images/icons/facebook-f.png" alt="facebook icon" class="mr-3">
+                  <img src="../yay-company/images/icons/twitter.png" alt="twitter icon">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -162,10 +183,8 @@
 
   <footer class="footer mt-auto">
     <div class="container-fluid py-2">
-      <img src="images/icons/iconfinder_Rounded_Facebook_svg_5282541.png" alt="facebook icon" height="16px">
-      <img src="images/icons/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="twitter icon" height="16px">
-      <img src="images/icons/iconfinder_Android_4490603.png" alt="android icon" height="16px">
-      <img src="images/icons/iconfinder_Apple_4490604.png" alt="apple icon" height="16px">
+      <img src="images/icons/vimeo_youtube.png" alt="vimeo and youtube icon" height="16px">
+      <span class="text-muted email-footer">hello@yay.com</span>
       <span class="text-muted float-right">Copyright YAY 2020</span>
     </div>
   </footer>
